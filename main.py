@@ -21,10 +21,29 @@ def index():
 
 @app.route('/topten', methods=['GET'])
 def displaytop10():
-  #네이버쇼핑 검색 상위 10개 가져오기 (스크래핑)
+  ##네이버쇼핑 검색 상위 10개 가져오기 (스크래핑)
+  #검색할 카테고리 정하기
+  category = '신발'
+
+  #BeautifulSoup 기본 세팅
+  headers = {'User-Agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36'}
+  data = requests.get('https://search.shopping.naver.com/',headers=headers)
+  soup = BeautifulSoup(data.text, 'html.parser')
+
   #썸네일, 텍스트, 가격
-  #
-  return jsonify({"result":[{"img":"a"},{"img":"b"}]})
+  for product in topten:
+    #select 해서 집어 넣기
+    thumbnail = 
+    text = 
+    price = 
+    product = {
+      'thumbnail' : thumbnail,
+      'text' : text,
+      'price': price,
+    }
+  
+  return soup
+  #return jsonify({"result":[[{"img":"a"},{"img":"b"}]]})
 
 @app.route('/clicktrend', methods=['GET'])
 def clicktrend():
