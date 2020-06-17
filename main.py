@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 from random import choice
-import request
+import requests
 from bs4 import BeautifulSoup
 
 from pymongo import MongoClient #pymongo 임포트하기
