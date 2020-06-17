@@ -31,16 +31,17 @@ def displaytop10():
   soup = BeautifulSoup(data.text, 'html.parser')
 
   #썸네일, 텍스트, 가격
-  for product in topten:
-    #select 해서 집어 넣기
-    thumbnail = 
-    text = 
-    price = 
-    product = {
-      'thumbnail' : thumbnail,
-      'text' : text,
-      'price': price,
-    }
+  # for product in topten:
+  #   #select 해서 집어 넣기
+  #   pass
+  #   thumbnail = 
+  #   text = 
+  #   price = 
+  #   product = {
+  #     'thumbnail' : thumbnail,
+  #     'text' : text,
+  #     'price': price,
+  #   }
   
   return soup
   #return jsonify({"result":[[{"img":"a"},{"img":"b"}]]})
