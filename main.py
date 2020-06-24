@@ -34,9 +34,9 @@ def saveclicktrend():
         ],
         "category": [
           {
-            "name": "패션의류",
+            "name": "디지털/가전",
             "param": [
-              "50000000"
+              "50000003"
             ]
           },
           {
@@ -112,8 +112,8 @@ def savedeviceshare():
     json_body = {
   "startDate": "2017-08-01",
   "endDate": "2017-09-30",
-  "timeUnit": "month",
-  "category": "50000000",
+  "timeUnit": "week",
+  "category": "50000003",
   "gender": "f",
   "ages": [ "20",  "30"]
   }
@@ -168,8 +168,8 @@ def savegendershare():
     json_body = {
   "startDate": "2017-08-01",
   "endDate": "2017-09-30",
-  "timeUnit": "month",
-  "category": "50000000",
+  "timeUnit": "week",
+  "category": "50000003",
   "device": "pc",
   "ages": [ "20",  "30"]
     } 
