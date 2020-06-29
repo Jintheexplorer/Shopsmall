@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, jsonify # Flask의 결과를 JSON으로 준다
 
 import requests
@@ -10,7 +11,6 @@ client = MongoClient(
 db = client['heroku_xmp8k4vm']
 
 main = Flask(__name__)
-
 
 @main.route('/')
 def index():
