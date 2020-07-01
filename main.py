@@ -12,6 +12,7 @@ db = client['heroku_xmp8k4vm']
 
 main = Flask(__name__)
 
+
 @main.route('/saveclicktrend', methods=['GET'])
 def saveclicktrend():
     from flask import request as flask_request
