@@ -12,10 +12,6 @@ db = client['heroku_xmp8k4vm']
 
 main = Flask(__name__)
 
-@main.route('/')
-def index():
-    return render_template('index.html')
-
 @main.route('/saveclicktrend', methods=['GET'])
 def saveclicktrend():
     from flask import request as flask_request
@@ -227,7 +223,7 @@ def gendershare():
 
 
 if __name__ == "__main__":
-    main.run(host='0.0.0.0', port=8080)
+    main.run(host='0.0.0.0', port=5000)
 
     # # JSON to STRING
     # body = json.dumps(json_body)
